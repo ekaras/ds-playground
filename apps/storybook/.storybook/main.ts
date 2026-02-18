@@ -1,4 +1,5 @@
 import type { StorybookConfig } from '@storybook/react-vite';
+import { vanillaExtractPlugin } from '@vanilla-extract/vite-plugin';
 
 const config: StorybookConfig = {
   stories: ['../src/**/*.stories.@(ts|tsx)'],
@@ -6,7 +7,13 @@ const config: StorybookConfig = {
   framework: {
     name: '@storybook/react-vite',
     options: {}
-  }
+  },
+  viteFinal(config) {
+    return {
+      ...config,
+      plugins: [...(config.plugins ?? []), vanillaExtractPlugin()],
+    };
+  },
 };
 
 export default config;
