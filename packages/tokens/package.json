@@ -1,0 +1,22 @@
+{
+  "name": "@acme-ds/tokens",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsc -p tsconfig.json --watch",
+    "lint": "eslint src --ext .ts",
+    "test": "echo 'No tests yet for @acme-ds/tokens'",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@vanilla-extract/css": "^1.15.5"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.2"
+  }
+}
