@@ -1,0 +1,13 @@
+{
+  "color": {
+    "brand": {
+      "postRed": {
+        "500": {
+          "value": "#DC1928",
+          "type": "color",
+          "description": "Post Red 500 — Primary brand colour"
+        }
+      }
+    }
+  }
+}
