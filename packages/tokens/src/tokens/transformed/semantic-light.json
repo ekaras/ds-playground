@@ -1,0 +1,168 @@
+{
+  "color": {
+    "bgDefault": {
+      "value": "#fafafa",
+      "type": "color"
+    },
+    "bgSurface": {
+      "value": "#f5f5f5",
+      "type": "color"
+    },
+    "bgSurfaceHover": {
+      "value": "#eeeeee",
+      "type": "color"
+    },
+    "bgInverse": {
+      "value": "#212129",
+      "type": "color"
+    },
+    "textDefault": {
+      "value": "#212129",
+      "type": "color"
+    },
+    "textSubtle": {
+      "value": "#6d6d72",
+      "type": "color"
+    },
+    "textDisabled": {
+      "value": "#bebec8",
+      "type": "color"
+    },
+    "textInverse": {
+      "value": "#fafafa",
+      "type": "color"
+    },
+    "textBrand": {
+      "value": "#bd1723",
+      "type": "color"
+    },
+    "borderSubtle": {
+      "value": "#eeeeee",
+      "type": "color"
+    },
+    "borderDefault": {
+      "value": "#e2e2e2",
+      "type": "color"
+    },
+    "borderStrong": {
+      "value": "#919194",
+      "type": "color"
+    },
+    "borderFocus": {
+      "value": "#3587da",
+      "type": "color"
+    },
+    "actionPrimaryBg": {
+      "value": "#dc1928",
+      "type": "color"
+    },
+    "actionPrimaryBgHover": {
+      "value": "#bd1723",
+      "type": "color"
+    },
+    "actionPrimaryText": {
+      "value": "#fafafa",
+      "type": "color"
+    },
+    "actionSecondaryBg": {
+      "value": "#f5f5f5",
+      "type": "color"
+    },
+    "actionSecondaryBgHover": {
+      "value": "#eeeeee",
+      "type": "color"
+    },
+    "actionSecondaryText": {
+      "value": "#212129",
+      "type": "color"
+    },
+    "actionDisabledBg": {
+      "value": "#eeeeee",
+      "type": "color"
+    },
+    "actionDisabledText": {
+      "value": "#a2a2b0",
+      "type": "color"
+    },
+    "systemErrorBg": {
+      "value": "#fef2f3",
+      "type": "color"
+    },
+    "systemErrorBorder": {
+      "value": "#f295a1",
+      "type": "color"
+    },
+    "systemErrorIcon": {
+      "value": "#d61834",
+      "type": "color"
+    },
+    "systemErrorText": {
+      "value": "#941024",
+      "type": "color"
+    },
+    "systemSuccessBg": {
+      "value": "#eef9f2",
+      "type": "color"
+    },
+    "systemSuccessBorder": {
+      "value": "#7ed09e",
+      "type": "color"
+    },
+    "systemSuccessIcon": {
+      "value": "#1d964f",
+      "type": "color"
+    },
+    "systemSuccessText": {
+      "value": "#136634",
+      "type": "color"
+    },
+    "systemInfoBg": {
+      "value": "#f0f6fe",
+      "type": "color"
+    },
+    "systemInfoBorder": {
+      "value": "#90c2f3",
+      "type": "color"
+    },
+    "systemInfoIcon": {
+      "value": "#3587da",
+      "type": "color"
+    },
+    "systemInfoText": {
+      "value": "#235b96",
+      "type": "color"
+    },
+    "systemWarningBg": {
+      "value": "#fff8ed",
+      "type": "color"
+    },
+    "systemWarningBorder": {
+      "value": "#f4d096",
+      "type": "color"
+    },
+    "systemWarningIcon": {
+      "value": "#e2ad51",
+      "type": "color"
+    },
+    "systemWarningText": {
+      "value": "#8f4700",
+      "type": "color"
+    },
+    "systemPromotionBg": {
+      "value": "#f7f4fe",
+      "type": "color"
+    },
+    "systemPromotionBorder": {
+      "value": "#bea7f5",
+      "type": "color"
+    },
+    "systemPromotionIcon": {
+      "value": "#896de8",
+      "type": "color"
+    },
+    "systemPromotionText": {
+      "value": "#5d4a9f",
+      "type": "color"
+    }
+  }
+}

@@ -1,0 +1,248 @@
+{
+  "typography": {
+    "fontFamilyBrand": {
+      "value": "AP Type Pro Text",
+      "type": "fontFamily"
+    },
+    "fontWeightRegular": {
+      "value": "Regular",
+      "type": "fontWeight"
+    },
+    "fontWeightMedium": {
+      "value": "Medium",
+      "type": "fontWeight"
+    },
+    "fontWeightBold": {
+      "value": "Bold",
+      "type": "fontWeight"
+    },
+    "fontSizeDisplay600": {
+      "value": "48px",
+      "type": "dimension"
+    },
+    "fontSizeDisplay700": {
+      "value": "56px",
+      "type": "dimension"
+    },
+    "fontSizeDisplay800": {
+      "value": "64px",
+      "type": "dimension"
+    },
+    "fontSizeDisplay900": {
+      "value": "72px",
+      "type": "dimension"
+    },
+    "fontSizeHeading70": {
+      "value": "14px",
+      "type": "dimension"
+    },
+    "fontSizeHeading80": {
+      "value": "16px",
+      "type": "dimension"
+    },
+    "fontSizeHeading90": {
+      "value": "20px",
+      "type": "dimension"
+    },
+    "fontSizeHeading100": {
+      "value": "24px",
+      "type": "dimension"
+    },
+    "fontSizeHeading200": {
+      "value": "28px",
+      "type": "dimension"
+    },
+    "fontSizeHeading300": {
+      "value": "32px",
+      "type": "dimension"
+    },
+    "fontSizeHeading400": {
+      "value": "36px",
+      "type": "dimension"
+    },
+    "fontSizeHeading500": {
+      "value": "40px",
+      "type": "dimension"
+    },
+    "fontSizeBodyLarge": {
+      "value": "16px",
+      "type": "dimension"
+    },
+    "fontSizeBodyMedium": {
+      "value": "14px",
+      "type": "dimension"
+    },
+    "fontSizeBodySmall": {
+      "value": "12px",
+      "type": "dimension"
+    },
+    "fontSizeCaptionDefault": {
+      "value": "12px",
+      "type": "dimension"
+    },
+    "fontSizeOverlineDefault": {
+      "value": "12px",
+      "type": "dimension"
+    },
+    "fontSizeLabelLarge": {
+      "value": "16px",
+      "type": "dimension"
+    },
+    "fontSizeLabelMedium": {
+      "value": "14px",
+      "type": "dimension"
+    },
+    "lineHeightDisplay600": {
+      "value": "52px",
+      "type": "dimension"
+    },
+    "lineHeightDisplay700": {
+      "value": "60px",
+      "type": "dimension"
+    },
+    "lineHeightDisplay800": {
+      "value": "68px",
+      "type": "dimension"
+    },
+    "lineHeightDisplay900": {
+      "value": "76px",
+      "type": "dimension"
+    },
+    "lineHeightHeading70": {
+      "value": "20px",
+      "type": "dimension"
+    },
+    "lineHeightHeading80": {
+      "value": "20px",
+      "type": "dimension"
+    },
+    "lineHeightHeading90": {
+      "value": "24px",
+      "type": "dimension"
+    },
+    "lineHeightHeading100": {
+      "value": "28px",
+      "type": "dimension"
+    },
+    "lineHeightHeading200": {
+      "value": "32px",
+      "type": "dimension"
+    },
+    "lineHeightHeading300": {
+      "value": "36px",
+      "type": "dimension"
+    },
+    "lineHeightHeading400": {
+      "value": "40px",
+      "type": "dimension"
+    },
+    "lineHeightHeading500": {
+      "value": "44px",
+      "type": "dimension"
+    },
+    "lineHeightBodyLarge": {
+      "value": "24px",
+      "type": "dimension"
+    },
+    "lineHeightBodyMedium": {
+      "value": "20px",
+      "type": "dimension"
+    },
+    "lineHeightBodySmall": {
+      "value": "16px",
+      "type": "dimension"
+    },
+    "lineHeightCaptionDefault": {
+      "value": "16px",
+      "type": "dimension"
+    },
+    "lineHeightOverlineDefault": {
+      "value": "12px",
+      "type": "dimension"
+    },
+    "lineHeightLabelLarge": {
+      "value": "16px",
+      "type": "dimension"
+    },
+    "lineHeightLabelMedium": {
+      "value": "14px",
+      "type": "dimension"
+    },
+    "letterSpacingDisplay600": {
+      "value": "-1.2999999523162842px",
+      "type": "dimension"
+    },
+    "letterSpacingDisplay700": {
+      "value": "-2.0999999046325684px",
+      "type": "dimension"
+    },
+    "letterSpacingDisplay800": {
+      "value": "-2.299999952316284px",
+      "type": "dimension"
+    },
+    "letterSpacingDisplay900": {
+      "value": "-2.5999999046325684px",
+      "type": "dimension"
+    },
+    "letterSpacingHeading70": {
+      "value": "-0.25px",
+      "type": "dimension"
+    },
+    "letterSpacingHeading80": {
+      "value": "-0.4000000059604645px",
+      "type": "dimension"
+    },
+    "letterSpacingHeading90": {
+      "value": "-0.4000000059604645px",
+      "type": "dimension"
+    },
+    "letterSpacingHeading100": {
+      "value": "-0.6000000238418579px",
+      "type": "dimension"
+    },
+    "letterSpacingHeading200": {
+      "value": "-0.800000011920929px",
+      "type": "dimension"
+    },
+    "letterSpacingHeading300": {
+      "value": "-0.8999999761581421px",
+      "type": "dimension"
+    },
+    "letterSpacingHeading400": {
+      "value": "-1px",
+      "type": "dimension"
+    },
+    "letterSpacingHeading500": {
+      "value": "-1.2999999523162842px",
+      "type": "dimension"
+    },
+    "letterSpacingBodyLarge": {
+      "value": "0px",
+      "type": "dimension"
+    },
+    "letterSpacingBodyMedium": {
+      "value": "0px",
+      "type": "dimension"
+    },
+    "letterSpacingBodySmall": {
+      "value": "0.25px",
+      "type": "dimension"
+    },
+    "letterSpacingCaptionDefault": {
+      "value": "0.25px",
+      "type": "dimension"
+    },
+    "letterSpacingOverlineDefault": {
+      "value": "0.25px",
+      "type": "dimension"
+    },
+    "letterSpacingLabelLarge": {
+      "value": "0px",
+      "type": "dimension"
+    },
+    "letterSpacingLabelMedium": {
+      "value": "0px",
+      "type": "dimension"
+    }
+  }
+}

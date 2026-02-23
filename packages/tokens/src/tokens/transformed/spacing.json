@@ -1,0 +1,60 @@
+{
+  "spacing": {
+    "spacing0": {
+      "value": "0px",
+      "type": "dimension"
+    },
+    "spacing2": {
+      "value": "2px",
+      "type": "dimension"
+    },
+    "spacing4": {
+      "value": "4px",
+      "type": "dimension"
+    },
+    "spacing8": {
+      "value": "8px",
+      "type": "dimension"
+    },
+    "spacing12": {
+      "value": "12px",
+      "type": "dimension"
+    },
+    "spacing16": {
+      "value": "16px",
+      "type": "dimension"
+    },
+    "spacing20": {
+      "value": "20px",
+      "type": "dimension"
+    },
+    "spacing24": {
+      "value": "24px",
+      "type": "dimension"
+    },
+    "spacing32": {
+      "value": "32px",
+      "type": "dimension"
+    },
+    "spacing40": {
+      "value": "40px",
+      "type": "dimension"
+    },
+    "spacing48": {
+      "value": "48px",
+      "type": "dimension"
+    },
+    "spacing64": {
+      "value": "64px",
+      "type": "dimension"
+    },
+    "spacing80": {
+      "value": "80px",
+      "type": "dimension"
+    },
+    "spacing96": {
+      "value": "96px",
+      "type": "dimension"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "radius": {
+    "radiusFull": {
+      "value": "9999px",
+      "type": "dimension"
+    },
+    "radius0": {
+      "value": "0px",
+      "type": "dimension"
+    },
+    "radius2": {
+      "value": "2px",
+      "type": "dimension"
+    },
+    "radius4": {
+      "value": "4px",
+      "type": "dimension"
+    },
+    "radius8": {
+      "value": "8px",
+      "type": "dimension"
+    },
+    "radius12": {
+      "value": "12px",
+      "type": "dimension"
+    },
+    "radius16": {
+      "value": "16px",
+      "type": "dimension"
+    },
+    "radius20": {
+      "value": "20px",
+      "type": "dimension"
+    },
+    "radius24": {
+      "value": "24px",
+      "type": "dimension"
+    },
+    "radius32": {
+      "value": "32px",
+      "type": "dimension"
+    },
+    "radius40": {
+      "value": "40px",
+      "type": "dimension"
+    }
+  }
+}
