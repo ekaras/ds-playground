@@ -1,0 +1,47 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+[data-theme="dark"] {
+  --pm3-semantic-dark-bg-default: #1e1e21;
+  --pm3-semantic-dark-bg-surface: #2e2e31;
+  --pm3-semantic-dark-bg-surface-hover: #3f3f42;
+  --pm3-semantic-dark-bg-inverse: #fafafa;
+  --pm3-semantic-dark-text-default: #fafafa;
+  --pm3-semantic-dark-text-subtle: #e2e2e2;
+  --pm3-semantic-dark-text-disabled: #757578;
+  --pm3-semantic-dark-text-inverse: #212129;
+  --pm3-semantic-dark-text-brand: #e96879;
+  --pm3-semantic-dark-border-subtle: #3f3f42;
+  --pm3-semantic-dark-border-default: #5a5a5d;
+  --pm3-semantic-dark-border-strong: #919194;
+  --pm3-semantic-dark-border-focus: #63a8ec;
+  --pm3-semantic-dark-action-primary-bg: #dc1928;
+  --pm3-semantic-dark-action-primary-bg-hover: #e96879;
+  --pm3-semantic-dark-action-primary-text: #fafafa;
+  --pm3-semantic-dark-action-secondary-bg: #3f3f42;
+  --pm3-semantic-dark-action-secondary-bg-hover: #5a5a5d;
+  --pm3-semantic-dark-action-secondary-text: #fafafa;
+  --pm3-semantic-dark-action-disabled-bg: #3f3f42;
+  --pm3-semantic-dark-action-disabled-text: #757578;
+  --pm3-semantic-dark-system-error-bg: #560814;
+  --pm3-semantic-dark-system-error-border: #941024;
+  --pm3-semantic-dark-system-error-icon: #e96879;
+  --pm3-semantic-dark-system-error-text: #f8bcc3;
+  --pm3-semantic-dark-system-success-bg: #0a391d;
+  --pm3-semantic-dark-system-success-border: #136634;
+  --pm3-semantic-dark-system-success-icon: #4eb978;
+  --pm3-semantic-dark-system-success-text: #aee2c2;
+  --pm3-semantic-dark-system-info-bg: #123356;
+  --pm3-semantic-dark-system-info-border: #235b96;
+  --pm3-semantic-dark-system-info-icon: #63a8ec;
+  --pm3-semantic-dark-system-info-text: #b9d9f8;
+  --pm3-semantic-dark-system-warning-bg: #6e3100;
+  --pm3-semantic-dark-system-warning-border: #b25f00;
+  --pm3-semantic-dark-system-warning-icon: #ecbf74;
+  --pm3-semantic-dark-system-warning-text: #f9e0b8;
+  --pm3-semantic-dark-system-promotion-bg: #362a5c;
+  --pm3-semantic-dark-system-promotion-border: #5d4a9f;
+  --pm3-semantic-dark-system-promotion-icon: #a483f0;
+  --pm3-semantic-dark-system-promotion-text: #d6c8fa;
+}

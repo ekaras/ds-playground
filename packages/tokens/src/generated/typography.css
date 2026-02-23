@@ -1,0 +1,67 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+:root {
+  --pm3-typography-font-family-brand: 'AP Type Pro Text';
+  --pm3-typography-font-weight-regular: Regular;
+  --pm3-typography-font-weight-medium: Medium;
+  --pm3-typography-font-weight-bold: Bold;
+  --pm3-typography-font-size-display600: 48px;
+  --pm3-typography-font-size-display700: 56px;
+  --pm3-typography-font-size-display800: 64px;
+  --pm3-typography-font-size-display900: 72px;
+  --pm3-typography-font-size-heading70: 14px;
+  --pm3-typography-font-size-heading80: 16px;
+  --pm3-typography-font-size-heading90: 20px;
+  --pm3-typography-font-size-heading100: 24px;
+  --pm3-typography-font-size-heading200: 28px;
+  --pm3-typography-font-size-heading300: 32px;
+  --pm3-typography-font-size-heading400: 36px;
+  --pm3-typography-font-size-heading500: 40px;
+  --pm3-typography-font-size-body-large: 16px;
+  --pm3-typography-font-size-body-medium: 14px;
+  --pm3-typography-font-size-body-small: 12px;
+  --pm3-typography-font-size-caption-default: 12px;
+  --pm3-typography-font-size-overline-default: 12px;
+  --pm3-typography-font-size-label-large: 16px;
+  --pm3-typography-font-size-label-medium: 14px;
+  --pm3-typography-line-height-display600: 52px;
+  --pm3-typography-line-height-display700: 60px;
+  --pm3-typography-line-height-display800: 68px;
+  --pm3-typography-line-height-display900: 76px;
+  --pm3-typography-line-height-heading70: 20px;
+  --pm3-typography-line-height-heading80: 20px;
+  --pm3-typography-line-height-heading90: 24px;
+  --pm3-typography-line-height-heading100: 28px;
+  --pm3-typography-line-height-heading200: 32px;
+  --pm3-typography-line-height-heading300: 36px;
+  --pm3-typography-line-height-heading400: 40px;
+  --pm3-typography-line-height-heading500: 44px;
+  --pm3-typography-line-height-body-large: 24px;
+  --pm3-typography-line-height-body-medium: 20px;
+  --pm3-typography-line-height-body-small: 16px;
+  --pm3-typography-line-height-caption-default: 16px;
+  --pm3-typography-line-height-overline-default: 12px;
+  --pm3-typography-line-height-label-large: 16px;
+  --pm3-typography-line-height-label-medium: 14px;
+  --pm3-typography-letter-spacing-display600: -1.2999999523162842px;
+  --pm3-typography-letter-spacing-display700: -2.0999999046325684px;
+  --pm3-typography-letter-spacing-display800: -2.299999952316284px;
+  --pm3-typography-letter-spacing-display900: -2.5999999046325684px;
+  --pm3-typography-letter-spacing-heading70: -0.25px;
+  --pm3-typography-letter-spacing-heading80: -0.4000000059604645px;
+  --pm3-typography-letter-spacing-heading90: -0.4000000059604645px;
+  --pm3-typography-letter-spacing-heading100: -0.6000000238418579px;
+  --pm3-typography-letter-spacing-heading200: -0.800000011920929px;
+  --pm3-typography-letter-spacing-heading300: -0.8999999761581421px;
+  --pm3-typography-letter-spacing-heading400: -1px;
+  --pm3-typography-letter-spacing-heading500: -1.2999999523162842px;
+  --pm3-typography-letter-spacing-body-large: 0px;
+  --pm3-typography-letter-spacing-body-medium: 0px;
+  --pm3-typography-letter-spacing-body-small: 0.25px;
+  --pm3-typography-letter-spacing-caption-default: 0.25px;
+  --pm3-typography-letter-spacing-overline-default: 0.25px;
+  --pm3-typography-letter-spacing-label-large: 0px;
+  --pm3-typography-letter-spacing-label-medium: 0px;
+}
