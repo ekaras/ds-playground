@@ -3,31 +3,31 @@ import { vars } from '@acme-ds/tokens';
 
 const base = style({
   margin: 0,
-  fontFamily: vars.font.body,
-  color: vars.color.text
+  fontFamily: `var(--${vars.typography.fontFamilyBrand})`,
+  color: `var(--${vars.color.textDefault})`
 });
 
 export const text = styleVariants({
   body: [
     base,
     {
-      fontSize: vars.fontSize.md,
-      lineHeight: vars.lineHeight.normal
+      fontSize: `var(--${vars.typography.fontSizeBodyLarge})`,
+      lineHeight: `var(--${vars.typography.lineHeightBodyLarge})`
     }
   ],
   subtle: [
     base,
     {
-      fontSize: vars.fontSize.sm,
-      lineHeight: vars.lineHeight.normal,
-      color: vars.color.textSubtle
+      fontSize: `var(--${vars.typography.fontSizeBodyMedium})`,
+      lineHeight: `var(--${vars.typography.lineHeightBodyMedium})`,
+      color: `var(--${vars.color.textSubtle})`
     }
   ],
   heading: [
     base,
     {
-      fontSize: vars.fontSize.xl,
-      lineHeight: vars.lineHeight.tight,
+      fontSize: `var(--${vars.typography.fontSizeLabelLarge})`,
+      lineHeight: `var(--${vars.typography.lineHeightBodyLarge})`,
       fontWeight: 700
     }
   ]

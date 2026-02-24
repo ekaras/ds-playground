@@ -1,56 +1,57 @@
-import { createGlobalTheme } from '@vanilla-extract/css';
+import { createGlobalThemeContract } from '@vanilla-extract/css';
 
-export const vars = createGlobalTheme(':root', {
+export const vars = createGlobalThemeContract({
   color: {
-    brand: '#0F4C81',
-    brandHover: '#0C3C66',
-    text: '#1B1F23',
-    textSubtle: '#4B5563',
-    background: '#FFFFFF',
-    surface: '#F8FAFC',
-    border: '#D0D7DE',
-    danger: '#B42318',
-    focus: '#1F6FEB'
+    bgDefault: 'pm3-color-bg-default',
+    bgSurface: 'pm3-color-bg-surface',
+    bgSurfaceHover: 'pm3-color-bg-surface-hover',
+    bgInverse: 'pm3-color-bg-inverse',
+    textDefault: 'pm3-color-text-default',
+    textSubtle: 'pm3-color-text-subtle',
+    textDisabled: 'pm3-color-text-disabled',
+    textInverse: 'pm3-color-text-inverse',
+    textBrand: 'pm3-color-text-brand',
+    borderSubtle: 'pm3-color-border-subtle',
+    borderDefault: 'pm3-color-border-default',
+    borderStrong: 'pm3-color-border-strong',
+    borderFocus: 'pm3-color-border-focus',
+    actionPrimaryBg: 'pm3-color-action-primary-bg',
+    actionPrimaryBgHover: 'pm3-color-action-primary-bg-hover',
+    actionPrimaryText: 'pm3-color-action-primary-text',
+    actionSecondaryBg: 'pm3-color-action-secondary-bg',
+    actionSecondaryBgHover: 'pm3-color-action-secondary-bg-hover',
+    actionSecondaryText: 'pm3-color-action-secondary-text',
+    actionDisabledBg: 'pm3-color-action-disabled-bg',
+    actionDisabledText: 'pm3-color-action-disabled-text',
   },
-  font: {
-    body: '"IBM Plex Sans", "Segoe UI", sans-serif',
-    mono: '"IBM Plex Mono", monospace'
-  },
-  fontSize: {
-    xs: '12px',
-    sm: '14px',
-    md: '16px',
-    lg: '20px',
-    xl: '28px'
-  },
-  lineHeight: {
-    tight: '1.2',
-    normal: '1.5',
-    relaxed: '1.65'
-  },
-  space: {
-    '0': '0',
-    '1': '4px',
-    '2': '8px',
-    '3': '12px',
-    '4': '16px',
-    '5': '20px',
-    '6': '24px',
-    '8': '32px',
-    '10': '40px'
+  spacing: {
+    s0: 'pm3-spacing-spacing0',
+    s2: 'pm3-spacing-spacing2',
+    s4: 'pm3-spacing-spacing4',
+    s8: 'pm3-spacing-spacing8',
+    s12: 'pm3-spacing-spacing12',
+    s16: 'pm3-spacing-spacing16',
+    s20: 'pm3-spacing-spacing20',
+    s24: 'pm3-spacing-spacing24',
+    s32: 'pm3-spacing-spacing32',
+    s40: 'pm3-spacing-spacing40',
   },
   radius: {
-    sm: '6px',
-    md: '10px',
-    lg: '14px',
-    pill: '9999px'
+    r0: 'pm3-radius-radius0',
+    r2: 'pm3-radius-radius2',
+    r4: 'pm3-radius-radius4',
+    r8: 'pm3-radius-radius8',
+    r12: 'pm3-radius-radius12',
+    r16: 'pm3-radius-radius16',
+    full: 'pm3-radius-radius-full',
   },
-  shadow: {
-    sm: '0 1px 2px rgba(16, 24, 40, 0.08)',
-    md: '0 6px 18px rgba(16, 24, 40, 0.12)'
-  },
-  motion: {
-    fast: '120ms',
-    base: '180ms'
+  typography: {
+    fontFamilyBrand: 'pm3-typography-font-family-brand',
+    fontSizeBodyMedium: 'pm3-typography-font-size-body-medium',
+    fontSizeBodyLarge: 'pm3-typography-font-size-body-large',
+    fontSizeLabelMedium: 'pm3-typography-font-size-label-medium',
+    fontSizeLabelLarge: 'pm3-typography-font-size-label-large',
+    lineHeightBodyMedium: 'pm3-typography-line-height-body-medium',
+    lineHeightBodyLarge: 'pm3-typography-line-height-body-large',
   }
 });

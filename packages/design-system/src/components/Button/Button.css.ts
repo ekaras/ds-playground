@@ -2,27 +2,30 @@ import { style } from '@vanilla-extract/css';
 import { vars } from '@acme-ds/tokens';
 
 export const button = style({
-  border: `1px solid ${vars.color.brand}`,
-  background: vars.color.brand,
-  color: vars.color.background,
-  borderRadius: vars.radius.md,
-  fontFamily: vars.font.body,
-  fontSize: vars.fontSize.md,
-  lineHeight: vars.lineHeight.normal,
+  border: 'none',
+  background: vars.color.actionPrimaryBg,
+  color: vars.color.actionPrimaryText,
+  borderRadius: vars.radius.r8,
+  fontFamily: vars.typography.fontFamilyBrand,
+  fontSize: vars.typography.fontSizeLabelLarge,
+  lineHeight: vars.typography.lineHeightBodyLarge,
   fontWeight: 600,
-  padding: `${vars.space[2]} ${vars.space[4]}`,
+  padding: `${vars.spacing.s8} ${vars.spacing.s16}`,
   minHeight: '40px',
   cursor: 'pointer',
-  transition: `all ${vars.motion.base} ease`,
+  transition: 'all 180ms ease',
   selectors: {
-    '&:hover': { background: vars.color.brandHover, borderColor: vars.color.brandHover },
+    '&:hover': {
+      background: vars.color.actionPrimaryBgHover,
+    },
     '&:focus-visible': {
-      outline: `3px solid ${vars.color.focus}`,
+      outline: `3px solid ${vars.color.borderFocus}`,
       outlineOffset: '2px'
     },
     '&:disabled': {
+      background: vars.color.actionDisabledBg,
+      color: vars.color.actionDisabledText,
       cursor: 'not-allowed',
-      opacity: 0.5
     }
   }
 });
