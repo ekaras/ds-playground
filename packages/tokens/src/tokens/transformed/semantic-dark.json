@@ -53,11 +53,11 @@
       "type": "color"
     },
     "actionPrimaryBg": {
-      "value": "#00A86B",
+      "value": "#DC1928",
       "type": "color"
     },
     "actionPrimaryBgHover": {
-      "value": "#4DBF8A",
+      "value": "#e96879",
       "type": "color"
     },
     "actionPrimaryText": {
