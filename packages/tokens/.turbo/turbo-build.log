@@ -1,0 +1,4 @@
+
+> @acme-ds/tokens@0.1.0 build /Users/optimus/ds-playground/packages/tokens
+> tsc -p tsconfig.json
+
