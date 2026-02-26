@@ -3,7 +3,7 @@
  */
 
 :root {
-  --pm3-typography-font-family-brand: 'AP Type Pro Text';
+  --pm3-typography-font-family-brand: Inter;
   --pm3-typography-font-weight-regular: Regular;
   --pm3-typography-font-weight-medium: Medium;
   --pm3-typography-font-weight-bold: Bold;
