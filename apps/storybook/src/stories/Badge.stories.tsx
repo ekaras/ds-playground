@@ -11,12 +11,6 @@ type Story = StoryObj<typeof Badge>;
 
 export const Default: Story = {
   args: {
-    label: 'New',
-  },
-};
-
-export const Status: Story = {
-  args: {
-    label: 'Sale',
+    label: 'Badge label',
   },
 };
