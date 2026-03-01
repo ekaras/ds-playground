@@ -1,14 +1,16 @@
 import type { HTMLAttributes } from 'react';
-import { badge } from './Badge.css';
+import { badge, badgeSuccess } from './Badge.css';
 
 export type BadgeProps = HTMLAttributes<HTMLSpanElement> & {
   label: string;
+  variant?: 'neutral' | 'success';
 };
 
 /** Small badge used to surface status or labels. */
-export function Badge({ label, ...props }: BadgeProps) {
+export function Badge({ label, variant = 'neutral', ...props }: BadgeProps) {
+  const variantClass = variant === 'success' ? badgeSuccess : '';
   return (
-    <span className={badge} {...props}>
+    <span className={`${badge} ${variantClass}`} {...props}>
       {label}
     </span>
   );

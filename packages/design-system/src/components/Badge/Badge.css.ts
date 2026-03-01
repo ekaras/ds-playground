@@ -16,3 +16,9 @@ export const badge = style({
   fontWeight: 400,
   gap: vars.spacing.s4,
 });
+
+export const badgeSuccess = style({
+  background: vars.color.systemSuccessBg,
+  border: `1px solid ${vars.color.systemSuccessBorder}`,
+  color: vars.color.systemSuccessText,
+});
