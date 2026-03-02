@@ -8,6 +8,9 @@ const config: StorybookConfig = {
     name: '@storybook/react-vite',
     options: {}
   },
+  features: {
+    buildStoriesJson: true,
+  },
   viteFinal(config) {
     return {
       ...config,

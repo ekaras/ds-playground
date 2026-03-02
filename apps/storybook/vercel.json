@@ -1,0 +1,5 @@
+{
+  "buildCommand": "pnpm --filter @acme-ds/storybook build",
+  "outputDirectory": "apps/storybook/storybook-static",
+  "installCommand": "pnpm install --no-frozen-lockfile"
+}

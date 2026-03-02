@@ -6,9 +6,11 @@
   "scripts": {
     "dev": "storybook dev -p 6006",
     "build": "storybook build",
+    "postbuild": "cp storybook-static/index.json storybook-static/stories.json",
     "lint": "eslint src .storybook --ext .ts,.tsx",
     "test": "echo 'Storybook tests can be added with @storybook/test-runner'",
-    "typecheck": "tsc -p tsconfig.json --noEmit"
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "chromatic": "npx chromatic --project-token=chpt_09ba0eebaef5884 --build-script-name=build"
   },
   "dependencies": {
     "@acme-ds/react": "workspace:*",
