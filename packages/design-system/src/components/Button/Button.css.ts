@@ -5,7 +5,7 @@ export const button = style({
   border: 'none',
   background: vars.color.actionPrimaryBg,
   color: vars.color.actionPrimaryText,
-  borderRadius: vars.radius.r8,
+  borderRadius: vars.radius.full,
   fontFamily: vars.typography.fontFamilyBrand,
   fontSize: vars.typography.fontSizeLabelLarge,
   lineHeight: vars.typography.lineHeightBodyLarge,
