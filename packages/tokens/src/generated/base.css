@@ -1,0 +1,13 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ * Base styles: typography and font imports
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: var(--pm3-typography-font-family-brand, 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif);
+  font-size: var(--pm3-typography-font-size-body-medium);
+  line-height: var(--pm3-typography-line-height-body-medium);
+  letter-spacing: var(--pm3-typography-letter-spacing-body-medium);
+}

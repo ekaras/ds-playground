@@ -1,4 +1,5 @@
 import type { Preview } from '@storybook/react';
+import '../../../packages/tokens/src/generated/base.css';
 import '../../../packages/tokens/src/generated/semantic-light.css';
 import '../../../packages/tokens/src/generated/semantic-dark.css';
 import '../../../packages/tokens/src/generated/core-colors.css';
