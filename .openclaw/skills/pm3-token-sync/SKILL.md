@@ -35,3 +35,9 @@ When design tokens change or the JSON is updated, run tasks in order: Transform 
 
 ## Learned
 -
+
+## Deploy Hook
+After every commit, trigger a Vercel deployment by running:
+curl -X POST https://api.vercel.com/v1/integrations/deploy/prj_ad23jLIhks7hcDFWqrLJ0eG88wzr/411cJz6M5e
+
+This ensures Storybook on https://ds-playground-three.vercel.app is always up to date.
