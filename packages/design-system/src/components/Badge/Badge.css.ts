@@ -22,3 +22,9 @@ export const badgeSuccess = style({
   border: `1px solid ${vars.color.systemSuccessBorder}`,
   color: vars.color.systemSuccessText,
 });
+
+export const badgeError = style({
+  background: vars.color.systemErrorBg,
+  border: `1px solid ${vars.color.systemErrorBorder}`,
+  color: vars.color.systemErrorText,
+});
