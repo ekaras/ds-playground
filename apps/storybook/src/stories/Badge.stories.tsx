@@ -7,7 +7,7 @@ const meta: Meta<typeof Badge> = {
   argTypes: {
     variant: {
       control: { type: 'radio' },
-      options: ['neutral', 'success', 'error'],
+      options: ['neutral', 'success', 'error', 'warning'],
     },
   },
 };
@@ -33,5 +33,12 @@ export const Error: Story = {
   args: {
     label: 'Badge label',
     variant: 'error',
+  },
+};
+
+export const Warning: Story = {
+  args: {
+    label: 'Badge label',
+    variant: 'warning',
   },
 };
