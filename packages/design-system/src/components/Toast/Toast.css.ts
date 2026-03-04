@@ -4,7 +4,7 @@ import { vars } from '@acme-ds/tokens';
 export const toast = style({
   display: 'flex',
   flexDirection: 'row',
-  alignItems: 'center',
+  alignItems: 'flex-start',
   justifyContent: 'space-between',
   padding: `${vars.spacing.s12} ${vars.spacing.s20}`,
   background: vars.color.bgSurface,
@@ -12,9 +12,50 @@ export const toast = style({
   color: vars.color.textDefault,
   borderRadius: vars.radius.r8,
   fontFamily: vars.typography.fontFamilyBrand,
+  gap: vars.spacing.s8,
+});
+
+export const toastContent = style({
+  display: 'flex',
+  flexDirection: 'column',
+  gap: vars.spacing.s4,
+  flex: 1,
+});
+
+export const toastTitle = style({
+  fontSize: vars.typography.fontSizeBodyMedium,
+  lineHeight: vars.typography.lineHeightBodyMedium,
+  fontWeight: vars.typography.fontWeightMedium,
+  margin: 0,
+});
+
+export const toastMessage = style({
   fontSize: vars.typography.fontSizeBodySmall,
   lineHeight: vars.typography.lineHeightBodySmall,
-  gap: vars.spacing.s8,
+  fontWeight: vars.typography.fontWeightRegular,
+  margin: 0,
+});
+
+export const toastCloseButton = style({
+  background: 'none',
+  border: 'none',
+  cursor: 'pointer',
+  padding: 0,
+  fontSize: vars.typography.fontSizeBodyLarge,
+  color: 'inherit',
+  flexShrink: 0,
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  width: '24px',
+  height: '24px',
+  ':hover': {
+    opacity: 0.7,
+  },
+  ':focus': {
+    outline: `2px solid ${vars.color.borderFocus}`,
+    outlineOffset: '2px',
+  },
 });
 
 export const toastSuccess = style({

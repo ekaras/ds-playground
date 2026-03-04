@@ -1,6 +1,10 @@
 import type { HTMLAttributes } from 'react';
 import {
   toast,
+  toastContent,
+  toastTitle,
+  toastMessage,
+  toastCloseButton,
   toastSuccess,
   toastError,
   toastInfo,
@@ -17,7 +21,7 @@ export type ToastProps = HTMLAttributes<HTMLDivElement> & {
   onDismiss?: () => void;
 };
 
-/** Toast notification component for system feedback. */
+/** Toast notification component for system feedback. Displays a dismissible message with semantic color variants. */
 export function Toast({ title, message, variant = 'neutral', onDismiss, ...props }: ToastProps) {
   let variantClass = '';
   if (variant === 'success') {
@@ -33,24 +37,17 @@ export function Toast({ title, message, variant = 'neutral', onDismiss, ...props
   }
 
   return (
-    <div className={`${toast} ${variantClass}`} {...props}>
-      <div>
-        <div style={{ fontWeight: 500 }}>{title}</div>
-        <div style={{ fontSize: '0.875rem', marginTop: '4px' }}>{message}</div>
+    <div className={`${toast} ${variantClass}`} role="alert" {...props}>
+      <div className={toastContent}>
+        <div className={toastTitle}>{title}</div>
+        <div className={toastMessage}>{message}</div>
       </div>
       {onDismiss && (
         <button
+          className={toastCloseButton}
           onClick={onDismiss}
-          style={{
-            background: 'none',
-            border: 'none',
-            cursor: 'pointer',
-            fontSize: '1.25rem',
-            padding: 0,
-            minWidth: 'auto',
-            minHeight: 'auto',
-          }}
-          aria-label="Close"
+          aria-label="Close notification"
+          type="button"
         >
           ×
         </button>
