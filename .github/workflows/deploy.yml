@@ -1,43 +1,97 @@
+
 name: Deploy Storybook to Vercel
 
+
+
 on:
+
   push:
+
     branches:
+
       - main
 
+
+
 jobs:
+
   deploy:
+
     runs-on: ubuntu-latest
+
     steps:
+
       - name: Checkout Repository
+
         uses: actions/checkout@v4
 
+
+
       - name: Setup pnpm
+
         uses: pnpm/action-setup@v2
+
         with:
+
           version: 9.15.4
 
+
+
       - name: Setup Node.js
+
         uses: actions/setup-node@v4
+
         with:
+
           node-version: '20'
+
           cache: 'pnpm'
 
+
+
+      - name: Fix Git Identity
+
+        run: |
+
+          git config --global user.email "ossman@gmail.com"
+
+          git config --global user.name "ekaras"
+
+
+
       - name: Install Dependencies
+
         run: pnpm install
 
+
+
       - name: Build Design System & Storybook
+
         run: |
+
           pnpm --filter @acme-ds/tokens build && \
+
           pnpm --filter @acme-ds/react build && \
+
           pnpm --filter @acme-ds/storybook build
 
+
+
       - name: Deploy to Vercel
+
         uses: amondnet/vercel-action@v25
+
         with:
+
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
+
           vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
+
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
+
           working-directory: ./
+
           vercel-version: 50.23.2
+
           vercel-args: '--prod --yes --force'
+
