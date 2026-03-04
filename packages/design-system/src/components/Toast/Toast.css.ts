@@ -29,12 +29,24 @@ export const toastTitle = style({
   margin: 0,
 });
 
+export const toastTitleSuccess = style({
+  color: vars.color.systemSuccessText,
+});
+
 export const toastMessage = style({
   fontFamily: vars.typography.fontFamilyBrand,
   fontSize: vars.typography.fontSizeBodySmall,
   fontWeight: 400,
   color: vars.color.textDefault,
   margin: 0,
+});
+
+export const toastMessageSuccess = style({
+  color: vars.color.systemSuccessText,
+});
+
+export const toastCloseButtonSuccess = style({
+  color: vars.color.systemSuccessText,
 });
 
 export const toastCloseButton = style({
@@ -57,4 +69,9 @@ export const toastCloseButton = style({
     outline: `2px solid ${vars.color.borderDefault}`,
     outlineOffset: 2,
   },
+});
+
+export const toastSuccess = style({
+  background: vars.color.systemSuccessBg,
+  borderColor: vars.color.systemSuccessBorder,
 });
