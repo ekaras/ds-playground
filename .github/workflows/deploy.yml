@@ -1,7 +1,3 @@
-# Vercel Deploy Hook
-After every commit and push, trigger deployment with:
-curl -X POST https://api.vercel.com/v1/integrations/deploy/prj_ad23jLIhks7hcDFWqrLJ0eG88wzr/411cJz6M5e
-
 name: Deploy Storybook to Vercel
 
 on:
