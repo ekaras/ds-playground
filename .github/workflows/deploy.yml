@@ -1,3 +1,7 @@
+# Vercel Deploy Hook
+After every commit and push, trigger deployment with:
+curl -X POST https://api.vercel.com/v1/integrations/deploy/prj_ad23jLIhks7hcDFWqrLJ0eG88wzr/411cJz6M5e
+
 name: Deploy Storybook to Vercel
 
 on:
@@ -9,20 +13,34 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v2
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
         with:
           version: 9.15.4
-      - uses: actions/setup-node@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
           node-version: '20'
           cache: 'pnpm'
-      - run: pnpm install
-      - run: pnpm --filter @acme-ds/tokens build && pnpm --filter @acme-ds/react build && pnpm --filter @acme-ds/storybook build
-      - uses: amondnet/vercel-action@v25
+
+      - name: Install Dependencies
+        run: pnpm install
+
+      - name: Build Design System & Storybook
+        run: |
+          pnpm --filter @acme-ds/tokens build && \
+          pnpm --filter @acme-ds/react build && \
+          pnpm --filter @acme-ds/storybook build
+
+      - name: Deploy to Vercel
+        uses: amondnet/vercel-action@v25
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
           vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
           working-directory: ./
-          vercel-args: '--prod'
+          vercel-args: '--prod --yes'
