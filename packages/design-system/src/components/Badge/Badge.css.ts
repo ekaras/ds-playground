@@ -23,6 +23,12 @@ export const badgeSuccess = style({
   color: vars.color.systemSuccessText,
 });
 
+export const badgeError = style({
+  background: vars.color.systemErrorBg,
+  border: `1px solid ${vars.color.systemErrorBorder}`,
+  color: vars.color.systemErrorText,
+});
+
 export const badgeInfo = style({
   background: vars.color.systemInfoBg,
   border: `1px solid ${vars.color.systemInfoBorder}`,
