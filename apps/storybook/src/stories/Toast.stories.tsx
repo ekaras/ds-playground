@@ -1,0 +1,48 @@
+import type { Meta, StoryObj } from '@storybook/react';
+import { useState } from 'react';
+import { Toast } from '@acme-ds/react';
+
+const meta: Meta<typeof Toast> = {
+  title: 'Primitives/Toast',
+  component: Toast,
+  argTypes: {
+    title: {
+      control: { type: 'text' },
+    },
+    message: {
+      control: { type: 'text' },
+    },
+  },
+};
+
+export default meta;
+type Story = StoryObj<typeof Toast>;
+
+export const Default: Story = {
+  args: {
+    title: 'Toast Tile',
+    message: 'Message in details',
+    onDismiss: undefined,
+  },
+};
+
+export const WithDismiss: Story = {
+  render: (args) => {
+    const [isVisible, setIsVisible] = useState(true);
+    
+    if (!isVisible) {
+      return <p>Toast dismissed</p>;
+    }
+
+    return (
+      <Toast
+        {...args}
+        onDismiss={() => setIsVisible(false)}
+      />
+    );
+  },
+  args: {
+    title: 'Toast Tile',
+    message: 'Message in details',
+  },
+};
