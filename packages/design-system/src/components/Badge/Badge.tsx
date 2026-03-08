@@ -1,7 +1,7 @@
 import type { HTMLAttributes } from 'react';
-import { badge, badgeSuccess, badgeError, badgeInfo, badgeWarning } from './Badge.css';
+import { badge, badgeSuccess, badgeError, badgeInfo, badgeWarning, badgePromo } from './Badge.css';
 
-export type BadgeVariant = 'neutral' | 'success' | 'error' | 'info' | 'warning';
+export type BadgeVariant = 'neutral' | 'success' | 'error' | 'info' | 'warning' | 'promo';
 
 export type BadgeProps = HTMLAttributes<HTMLSpanElement> & {
   /** The text label displayed in the badge. */
@@ -23,6 +23,7 @@ export type BadgeProps = HTMLAttributes<HTMLSpanElement> & {
  * - `error`: Indicates a problem or error condition
  * - `info`: Provides informational context
  * - `warning`: Alerts to caution or warnings
+ * - `promo`: Highlights promotional or special offers
  *
  * Each variant uses PM3 design system tokens for consistent color, border, and text styling.
  *
@@ -31,6 +32,7 @@ export type BadgeProps = HTMLAttributes<HTMLSpanElement> & {
  * <Badge label="New" variant="success" />
  * <Badge label="Error" variant="error" />
  * <Badge label="Draft" variant="info" />
+ * <Badge label="Special Offer" variant="promo" />
  * ```
  */
 export function Badge({ label, variant = 'neutral', ...props }: BadgeProps) {
@@ -43,6 +45,8 @@ export function Badge({ label, variant = 'neutral', ...props }: BadgeProps) {
     variantClass = badgeInfo;
   } else if (variant === 'warning') {
     variantClass = badgeWarning;
+  } else if (variant === 'promo') {
+    variantClass = badgePromo;
   }
   return (
     <span className={`${badge} ${variantClass}`} {...props}>

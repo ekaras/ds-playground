@@ -16,6 +16,7 @@ import { Badge } from '@acme-ds/react';
  * - **Error**: Error states or problems
  * - **Info**: Informational context or auxiliary data
  * - **Warning**: Cautionary states or important notices
+ * - **Promo**: Promotional offers or featured content
  *
  * ## Usage
  *
@@ -43,6 +44,7 @@ import { Badge } from '@acme-ds/react';
  * | Error | systemErrorBg | systemErrorBorder | systemErrorText |
  * | Info | systemInfoBg | systemInfoBorder | systemInfoText |
  * | Warning | systemWarningBg | systemWarningBorder | systemWarningText |
+ * | Promo | systemPromotionBg | systemPromotionBorder | systemPromotionText |
  */
 const meta: Meta<typeof Badge> = {
   title: 'Components/Badge',
@@ -64,11 +66,11 @@ const meta: Meta<typeof Badge> = {
     },
     variant: {
       control: { type: 'radio' },
-      options: ['neutral', 'success', 'error', 'info', 'warning'],
+      options: ['neutral', 'success', 'error', 'info', 'warning', 'promo'],
       description:
         'Visual variant that determines the color scheme and semantic meaning',
       table: {
-        type: { summary: 'neutral | success | error | info | warning' },
+        type: { summary: 'neutral | success | error | info | warning | promo' },
         defaultValue: { summary: 'neutral' },
       },
     },
@@ -173,6 +175,25 @@ export const Warning: Story = {
 };
 
 /**
+ * Promo variant highlights promotional or special offers.
+ * Use for marketing campaigns, limited offers, or featured content.
+ */
+export const Promo: Story = {
+  args: {
+    label: 'Promo',
+    variant: 'promo',
+  },
+  parameters: {
+    docs: {
+      description: {
+        story:
+          'Promo variant with purple tones from PM3 system promotion tokens. Use for promotional states like "Special Offer", "Limited Time", "Featured", or "New Feature".',
+      },
+    },
+  },
+};
+
+/**
  * Example: Multiple badges together showing different statuses.
  */
 export const AllVariants: Story = {
@@ -183,6 +204,7 @@ export const AllVariants: Story = {
       <Badge label="Error" variant="error" />
       <Badge label="Info" variant="info" />
       <Badge label="Warning" variant="warning" />
+      <Badge label="Promo" variant="promo" />
     </div>
   ),
   parameters: {
@@ -228,6 +250,16 @@ export const UseCases: Story = {
           <Badge label="Draft" variant="info" />
           <Badge label="Published" variant="success" />
           <Badge label="Archived" variant="neutral" />
+        </div>
+      </div>
+      <div>
+        <p style={{ margin: '0 0 8px 0', fontSize: '12px', color: '#666' }}>
+          Marketing & Promotions
+        </p>
+        <div style={{ display: 'flex', gap: '8px' }}>
+          <Badge label="New Feature" variant="promo" />
+          <Badge label="Limited Time" variant="promo" />
+          <Badge label="Featured" variant="promo" />
         </div>
       </div>
     </div>
