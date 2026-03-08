@@ -4,3 +4,6 @@ storybook-static
 coverage
 .DS_Store
 .vercel
+.env
+scripts/notify-slack.sh
+scripts/notify-bano.sh
