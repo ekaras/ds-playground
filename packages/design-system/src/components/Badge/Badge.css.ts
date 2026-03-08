@@ -34,3 +34,9 @@ export const badgeInfo = style({
   border: `1px solid ${vars.color.systemInfoBorder}`,
   color: vars.color.systemInfoText,
 });
+
+export const badgeWarning = style({
+  background: vars.color.systemWarningBg,
+  border: `1px solid ${vars.color.systemWarningBorder}`,
+  color: vars.color.systemWarningText,
+});
