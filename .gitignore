@@ -7,3 +7,5 @@ coverage
 .env
 scripts/notify-slack.sh
 scripts/notify-bano.sh
+.turbo/cache
+**/.turbo/cache
