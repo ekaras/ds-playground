@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { Button } from '@acme-ds/react';
 
 const meta: Meta<typeof Button> = {
-  title: 'Primitives/Button',
+  title: 'Components/Button',
   component: Button,
   args: {
     children: 'Continue'
