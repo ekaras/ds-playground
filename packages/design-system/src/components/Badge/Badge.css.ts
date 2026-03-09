@@ -17,6 +17,12 @@ export const badge = style({
   gap: vars.spacing.s4,
 });
 
+export const badgeNeutral = style({
+  background: vars.color.bgSurface,
+  border: `1px solid ${vars.color.borderDefault}`,
+  color: vars.color.textDefault,
+});
+
 export const badgeSuccess = style({
   background: vars.color.systemSuccessBg,
   border: `1px solid ${vars.color.systemSuccessBorder}`,

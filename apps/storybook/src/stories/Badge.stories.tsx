@@ -88,6 +88,25 @@ export const Default: Story = {
 };
 
 /**
+ * Neutral variant for general labels and non-semantic information.
+ * Use for tags, metadata, and labels without specific meaning.
+ */
+export const Neutral: Story = {
+  args: {
+    label: 'Featured',
+    variant: 'neutral',
+  },
+  parameters: {
+    docs: {
+      description: {
+        story:
+          'Neutral variant with gray tones from PM3 system default tokens (bgSurface, borderDefault, textDefault). Use for general labels, tags, and metadata like "Featured", "New", or "Tag".',
+      },
+    },
+  },
+};
+
+/**
  * Success variant indicates a positive or successful state.
  * Use for completed tasks, approved items, or active states.
  */
