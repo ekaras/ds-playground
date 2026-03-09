@@ -22,27 +22,3 @@ export const badgeSuccess = style({
   border: `1px solid ${vars.color.systemSuccessBorder}`,
   color: vars.color.systemSuccessText,
 });
-
-export const badgeError = style({
-  background: vars.color.systemErrorBg,
-  border: `1px solid ${vars.color.systemErrorBorder}`,
-  color: vars.color.systemErrorText,
-});
-
-export const badgeInfo = style({
-  background: vars.color.systemInfoBg,
-  border: `1px solid ${vars.color.systemInfoBorder}`,
-  color: vars.color.systemInfoText,
-});
-
-export const badgeWarning = style({
-  background: vars.color.systemWarningBg,
-  border: `1px solid ${vars.color.systemWarningBorder}`,
-  color: vars.color.systemWarningText,
-});
-
-export const badgePromo = style({
-  background: vars.color.systemPromotionBg,
-  border: `1px solid ${vars.color.systemPromotionBorder}`,
-  color: vars.color.systemPromotionText,
-});
