@@ -13,7 +13,6 @@ import { Badge } from '@acme-ds/react';
  *
  * - **Neutral** (default): General labels without semantic meaning
  * - **Success**: Positive states or successful operations
- * - **Error**: Error states or problem conditions
  *
  * ## Usage
  *
@@ -22,9 +21,6 @@ import { Badge } from '@acme-ds/react';
  *
  * // Success badge
  * <Badge label="Active" variant="success" />
- *
- * // Error badge
- * <Badge label="Failed" variant="error" />
  *
  * // Neutral label
  * <Badge label="Featured" />
@@ -38,7 +34,6 @@ import { Badge } from '@acme-ds/react';
  * |---------|-----------|--------|------|
  * | Neutral | bgSurface | borderDefault | textDefault |
  * | Success | systemSuccessBg | systemSuccessBorder | systemSuccessText |
- * | Error | systemErrorBg | systemErrorBorder | systemErrorText |
  */
 const meta: Meta<typeof Badge> = {
   title: 'Components/Badge',
@@ -60,11 +55,11 @@ const meta: Meta<typeof Badge> = {
     },
     variant: {
       control: { type: 'radio' },
-      options: ['neutral', 'success', 'error'],
+      options: ['neutral', 'success'],
       description:
         'Visual variant that determines the color scheme and semantic meaning',
       table: {
-        type: { summary: 'neutral | success | error' },
+        type: { summary: 'neutral | success' },
         defaultValue: { summary: 'neutral' },
       },
     },
@@ -131,25 +126,6 @@ export const Success: Story = {
 };
 
 /**
- * Error variant indicates an error or problem state.
- * Use for failed operations, invalid items, or critical issues.
- */
-export const Error: Story = {
-  args: {
-    label: 'Error',
-    variant: 'error',
-  },
-  parameters: {
-    docs: {
-      description: {
-        story:
-          'Error variant with red tones from PM3 system error tokens. Use for error states like "Failed", "Invalid", or "Rejected".',
-      },
-    },
-  },
-};
-
-/**
  * Example: Multiple badges together showing different statuses.
  */
 export const AllVariants: Story = {
@@ -157,7 +133,6 @@ export const AllVariants: Story = {
     <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
       <Badge label="Neutral" variant="neutral" />
       <Badge label="Success" variant="success" />
-      <Badge label="Error" variant="error" />
     </div>
   ),
   parameters: {
@@ -192,16 +167,6 @@ export const UseCases: Story = {
           <Badge label="Featured" variant="neutral" />
           <Badge label="Approved" variant="success" />
           <Badge label="New" variant="neutral" />
-        </div>
-      </div>
-      <div>
-        <p style={{ margin: '0 0 8px 0', fontSize: '12px', color: '#666' }}>
-          Error States
-        </p>
-        <div style={{ display: 'flex', gap: '8px' }}>
-          <Badge label="Failed" variant="error" />
-          <Badge label="Invalid" variant="error" />
-          <Badge label="Rejected" variant="error" />
         </div>
       </div>
     </div>
