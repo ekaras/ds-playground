@@ -11,8 +11,8 @@ import { Badge } from '@acme-ds/react';
  *
  * ## Variants
  *
- * - **Neutral** (default): General labels without semantic meaning
- * - **Success**: Positive states or successful operations
+ * - **Success** (default): Positive states or successful operations
+ * - **Error**: Negative states or error conditions
  *
  * ## Usage
  *
@@ -22,8 +22,8 @@ import { Badge } from '@acme-ds/react';
  * // Success badge
  * <Badge label="Active" variant="success" />
  *
- * // Neutral label
- * <Badge label="Featured" />
+ * // Error badge
+ * <Badge label="Failed" variant="error" />
  * ```
  *
  * ## Design System Tokens
@@ -32,8 +32,8 @@ import { Badge } from '@acme-ds/react';
  *
  * | Variant | Background | Border | Text |
  * |---------|-----------|--------|------|
- * | Neutral | bgSurface | borderDefault | textDefault |
  * | Success | systemSuccessBg | systemSuccessBorder | systemSuccessText |
+ * | Error | systemErrorBg | systemErrorBorder | systemErrorText |
  */
 const meta: Meta<typeof Badge> = {
   title: 'Components/Badge',
@@ -55,12 +55,12 @@ const meta: Meta<typeof Badge> = {
     },
     variant: {
       control: { type: 'radio' },
-      options: ['neutral', 'success'],
+      options: ['success', 'error'],
       description:
         'Visual variant that determines the color scheme and semantic meaning',
       table: {
-        type: { summary: 'neutral | success' },
-        defaultValue: { summary: 'neutral' },
+        type: { summary: 'success | error' },
+        defaultValue: { summary: 'success' },
       },
     },
   },
@@ -70,37 +70,18 @@ export default meta;
 type Story = StoryObj<typeof Badge>;
 
 /**
- * The default badge variant with neutral styling.
- * Use for general labels without semantic meaning.
+ * The default badge variant with success styling.
+ * Use for positive states and successful operations.
  */
 export const Default: Story = {
   args: {
     label: 'Badge',
-    variant: 'neutral',
+    variant: 'success',
   },
   parameters: {
     docs: {
       description: {
-        story: 'The default neutral badge. Uses standard background, border, and text colors.',
-      },
-    },
-  },
-};
-
-/**
- * Neutral variant for general labels and non-semantic information.
- * Use for tags, metadata, and labels without specific meaning.
- */
-export const Neutral: Story = {
-  args: {
-    label: 'Featured',
-    variant: 'neutral',
-  },
-  parameters: {
-    docs: {
-      description: {
-        story:
-          'Neutral variant with gray tones from PM3 system default tokens (bgSurface, borderDefault, textDefault). Use for general labels, tags, and metadata like "Featured", "New", or "Tag".',
+        story: 'The default success badge. Uses green tones from PM3 system success tokens.',
       },
     },
   },
@@ -112,7 +93,7 @@ export const Neutral: Story = {
  */
 export const Success: Story = {
   args: {
-    label: 'Success',
+    label: 'Active',
     variant: 'success',
   },
   parameters: {
@@ -126,13 +107,32 @@ export const Success: Story = {
 };
 
 /**
+ * Error variant indicates a negative or error state.
+ * Use for failed operations, error conditions, or rejected items.
+ */
+export const Error: Story = {
+  args: {
+    label: 'Failed',
+    variant: 'error',
+  },
+  parameters: {
+    docs: {
+      description: {
+        story:
+          'Error variant with red tones from PM3 system error tokens. Use for error states like "Failed", "Rejected", or "Invalid".',
+      },
+    },
+  },
+};
+
+/**
  * Example: Multiple badges together showing different statuses.
  */
 export const AllVariants: Story = {
   render: () => (
     <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
-      <Badge label="Neutral" variant="neutral" />
       <Badge label="Success" variant="success" />
+      <Badge label="Error" variant="error" />
     </div>
   ),
   parameters: {
@@ -152,21 +152,20 @@ export const UseCases: Story = {
     <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
       <div>
         <p style={{ margin: '0 0 8px 0', fontSize: '12px', color: '#666' }}>
-          Status Labels
+          Outcome States
         </p>
         <div style={{ display: 'flex', gap: '8px' }}>
-          <Badge label="Active" variant="success" />
-          <Badge label="Inactive" variant="neutral" />
+          <Badge label="Approved" variant="success" />
+          <Badge label="Rejected" variant="error" />
         </div>
       </div>
       <div>
         <p style={{ margin: '0 0 8px 0', fontSize: '12px', color: '#666' }}>
-          General Labels
+          Operation Results
         </p>
         <div style={{ display: 'flex', gap: '8px' }}>
-          <Badge label="Featured" variant="neutral" />
-          <Badge label="Approved" variant="success" />
-          <Badge label="New" variant="neutral" />
+          <Badge label="Completed" variant="success" />
+          <Badge label="Failed" variant="error" />
         </div>
       </div>
     </div>
