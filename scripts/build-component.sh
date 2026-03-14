@@ -18,6 +18,14 @@ You are building a React component for the PM3 design system.
 Component name: $COMPONENT_NAME
 Figma URL: $FIGMA_URL
 
+CRITICAL: The ONLY valid package structure is:
+- packages/design-system/src/components/ — component files go HERE
+- apps/storybook/src/stories/ — stories go HERE
+- packages/tokens/src/generated/ — read tokens from HERE
+
+DO NOT create packages/ui/ or any new package. It does not exist in this repo.
+DO NOT run pnpm build or any build commands — that will be handled after you finish.
+
 Instructions:
 1. Use the Figma MCP (get_design_context) to fetch the full design spec from the Figma URL
 2. Read packages/tokens/src/generated/tokens.js for exact token names
@@ -33,9 +41,18 @@ Instructions:
 9. Add a static Focus story using a decorator that applies focus styles via className
 10. For icons: download the SVG from Figma MCP asset URLs, save to component folder, use currentColor for fill
 11. All colours must use PM3 tokens only
+12. When done, report ONLY the files you created — nothing else
 " \
 --allowedTools "mcp__figma__get_design_context,mcp__figma__get_metadata,mcp__figma__get_screenshot,Bash,Read,Write,Edit" \
 --dangerously-skip-permissions \
 2>/dev/null
 
-echo "Done. Review the files then run: pnpm build"
+echo "Running build..."
+cd /Users/optimus/ds-playground && pnpm build
+
+if [ $? -eq 0 ]; then
+  echo "Build passed ✅"
+else
+  echo "Build failed ❌ — check errors above"
+  exit 1
+fi
