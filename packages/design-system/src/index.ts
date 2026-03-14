@@ -5,3 +5,4 @@ export { Text, type TextProps, type TextTone } from './components/Text/Text';
 export { Input, type InputProps } from './components/Input/Input';
 export { Badge, type BadgeProps } from './components/Badge/Badge';
 export { Toast, type ToastProps, type ToastVariant } from './components/Toast/Toast';
+export { Link, type LinkProps } from './components/Link/Link';
