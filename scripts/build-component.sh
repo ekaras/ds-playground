@@ -1,37 +1,41 @@
 #!/bin/bash
-# build-component.sh - Passes Figma data to Claude Code to build a component
+# build-component.sh - Builds a component using Claude Code + Figma MCP
 # Usage: build-component.sh <figma-url> <component-name>
 
 FIGMA_URL=$1
 COMPONENT_NAME=$2
-SCRIPTS_DIR="$(dirname "$0")"
-COMPONENT_DIR="/Users/optimus/ds-playground/packages/design-system/src/components/$COMPONENT_NAME"
 
-mkdir -p "$COMPONENT_DIR"
+if [ -z "$FIGMA_URL" ] || [ -z "$COMPONENT_NAME" ]; then
+  echo "Usage: build-component.sh <figma-url> <component-name>"
+  exit 1
+fi
 
-echo "Fetching Figma data..."
-FIGMA_DATA=$("$SCRIPTS_DIR/figma-to-data.sh" "$FIGMA_URL" "$COMPONENT_DIR" 2>/dev/null)
+echo "Building $COMPONENT_NAME from Figma..."
 
-PROMPT="You are building a React component for a design system called PM3.
+cd /Users/optimus/ds-playground && claude -p "
+You are building a React component for the PM3 design system.
 
 Component name: $COMPONENT_NAME
-Output directory: $COMPONENT_DIR
-
-Here is the Figma design data:
-$FIGMA_DATA
+Figma URL: $FIGMA_URL
 
 Instructions:
-1. Check tokens.js at packages/tokens/src/generated/tokens.js for exact token names
-2. Use Vanilla Extract for styling (css.ts files)
-3. Create: $COMPONENT_NAME.tsx, $COMPONENT_NAME.css.ts, $COMPONENT_NAME.stories.tsx
-4. Use the exported icon.svg from $COMPONENT_DIR if it exists — never use text characters for icons
-5. Export the component from packages/design-system/src/index.ts
-6. All colours must use PM3 tokens — no hardcoded hex values"
+1. Use the Figma MCP (get_design_context) to fetch the full design spec from the Figma URL
+2. Read packages/tokens/src/generated/tokens.js for exact token names
+3. Read packages/tokens/src/generated/semantic-light.css for CSS variable names
+4. Study an existing component like Badge or Toast as a reference pattern
+5. Create these files:
+   - packages/design-system/src/components/$COMPONENT_NAME/$COMPONENT_NAME.tsx
+   - packages/design-system/src/components/$COMPONENT_NAME/$COMPONENT_NAME.css.ts
+   - apps/storybook/src/stories/$COMPONENT_NAME.stories.tsx
+6. Add export to packages/design-system/src/index.ts
+7. Use Vanilla Extract for styling — no inline styles, no hardcoded hex values
+8. Use CSS pseudo-classes for interactive states (hover, focus-visible, active, disabled)
+9. Add a static Focus story using a decorator that applies focus styles via className
+10. For icons: download the SVG from Figma MCP asset URLs, save to component folder, use currentColor for fill
+11. All colours must use PM3 tokens only
+" \
+--allowedTools "mcp__figma__get_design_context,mcp__figma__get_metadata,mcp__figma__get_screenshot,Bash,Read,Write,Edit" \
+--dangerously-skip-permissions \
+2>/dev/null
 
-echo "Building component with Claude Code..."
-cd /Users/optimus/ds-playground && claude -p "$PROMPT" \
-  --allowedTools "Bash,Read,Write,Edit" \
-  --dangerously-skip-permissions \
-  2>/dev/null
-
-echo "Done."
+echo "Done. Review the files then run: pnpm build"
