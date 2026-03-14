@@ -13,35 +13,25 @@ fi
 echo "Building $COMPONENT_NAME from Figma..."
 
 cd /Users/optimus/ds-playground && claude -p "
-You are building a React component for the PM3 design system.
-
-Component name: $COMPONENT_NAME
+Your task: Build the $COMPONENT_NAME component for the PM3 design system.
 Figma URL: $FIGMA_URL
 
-CRITICAL: The ONLY valid package structure is:
-- packages/design-system/src/components/ — component files go HERE
-- apps/storybook/src/stories/ — stories go HERE
-- packages/tokens/src/generated/ — read tokens from HERE
+Before writing a single file:
+1. Run: find packages/design-system/src/components -name '*.css.ts' | head -3
+2. Read 2-3 existing css.ts files to understand the exact styling pattern used
+3. Read packages/design-system/src/index.ts to understand the export pattern
+4. Read packages/tokens/src/generated/tokens.js to get exact token names
+5. Use the Figma MCP (get_design_context) to fetch design specs from the Figma URL
 
-DO NOT create packages/ui/ or packages/components/ or ANY new package. These do not exist. The ONLY packages are design-system, tokens, and the apps/storybook app.
-DO NOT run pnpm build or any build commands — that will be handled after you finish.
+Then build following EXACTLY the same patterns you found in step 2. Do not introduce any library or pattern not already present in the codebase.
 
-Instructions:
-1. Use the Figma MCP (get_design_context) to fetch the full design spec from the Figma URL
-2. Read packages/tokens/src/generated/tokens.js for exact token names
-3. Read packages/tokens/src/generated/semantic-light.css for CSS variable names
-4. Study an existing component like Badge or Toast as a reference pattern
-5. Create these files:
-   - packages/design-system/src/components/$COMPONENT_NAME/$COMPONENT_NAME.tsx
-   - packages/design-system/src/components/$COMPONENT_NAME/$COMPONENT_NAME.css.ts
-   - apps/storybook/src/stories/$COMPONENT_NAME.stories.tsx
-6. Add export to packages/design-system/src/index.ts
-7. Use Vanilla Extract for styling — no inline styles, no hardcoded hex values
-8. Use CSS pseudo-classes for interactive states (hover, focus-visible, active, disabled)
-9. Add a static Focus story using a decorator that applies focus styles via className
-10. For icons: download the SVG from Figma MCP asset URLs, save to component folder, use currentColor for fill
-11. All colours must use PM3 tokens only
-12. When done, report ONLY the files you created — nothing else
+Output files:
+- packages/design-system/src/components/$COMPONENT_NAME/$COMPONENT_NAME.tsx
+- packages/design-system/src/components/$COMPONENT_NAME/$COMPONENT_NAME.css.ts
+- apps/storybook/src/stories/$COMPONENT_NAME.stories.tsx
+- Add export to packages/design-system/src/index.ts
+
+When done, report only the files created.
 " \
 --allowedTools "mcp__figma__get_design_context,mcp__figma__get_metadata,mcp__figma__get_screenshot,Bash,Read,Write,Edit" \
 --dangerously-skip-permissions \
