@@ -52,6 +52,15 @@ export const Disabled: Story = {
   },
 };
 
+export const Focus: Story = {
+  render: () => (
+    <>
+      <style>{`.link-force-focus { outline: 2px solid var(--pm3-color-border-focus); outline-offset: 2px; text-decoration: none; }`}</style>
+      <Link href="#" className="link-force-focus">Label</Link>
+    </>
+  ),
+};
+
 export const AllStates: Story = {
   render: () => (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
