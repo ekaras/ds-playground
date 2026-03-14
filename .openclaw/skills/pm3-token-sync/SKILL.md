@@ -26,6 +26,7 @@ This script handles everything:
 - Auto rolls back if validation or build fails
 
 Do NOT run these steps manually. Always use build-component.sh.
+NEVER run claude directly. NEVER call git commit manually. NEVER create packages/components or packages/ui. build-component.sh is the ONLY permitted way to build a component — no exceptions, no alternatives.
 
 ### 2. Building a Variant of an Existing Component
 When asked to add a variant (e.g. "add a warning variant to Badge"):
