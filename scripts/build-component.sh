@@ -23,7 +23,7 @@ CRITICAL: The ONLY valid package structure is:
 - apps/storybook/src/stories/ — stories go HERE
 - packages/tokens/src/generated/ — read tokens from HERE
 
-DO NOT create packages/ui/ or any new package. It does not exist in this repo.
+DO NOT create packages/ui/ or packages/components/ or ANY new package. These do not exist. The ONLY packages are design-system, tokens, and the apps/storybook app.
 DO NOT run pnpm build or any build commands — that will be handled after you finish.
 
 Instructions:
