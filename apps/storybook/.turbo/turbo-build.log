@@ -7,7 +7,7 @@
 info => Cleaning outputDir: storybook-static
 info => Loading presets
 info => Building manager..
-info => Manager built ([38;2;181;126;229m134 ms[39m)
+info => Manager built ([38;2;181;126;229m133 ms[39m)
 info => Building preview..
 info Using tsconfig paths for react-docgen
 vite v5.4.21 building for production...
@@ -58,8 +58,8 @@ storybook-static/assets/DocsRenderer-CFRXHY34-BksqiYwo.js  883.44 kB │ gzip: 2
 - Using dynamic import() to code-split the application
 - Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
 - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
-✓ built in 6.47s
-info => Preview built ([38;2;181;126;229m6.94 s[39m)
+✓ built in 7.08s
+info => Preview built ([38;2;181;126;229m7.97 s[39m)
 info => Output directory: /Users/optimus/ds-playground/apps/storybook/storybook-static
 
 > @acme-ds/storybook@0.1.0 postbuild /Users/optimus/ds-playground/apps/storybook
