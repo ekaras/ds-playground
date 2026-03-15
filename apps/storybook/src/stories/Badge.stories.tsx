@@ -47,10 +47,3 @@ export const Warning: Story = {
     variant: 'warning',
   },
 };
-
-export const Promotion: Story = {
-  args: {
-    children: 'Promotion',
-    variant: 'promotion',
-  },
-};
