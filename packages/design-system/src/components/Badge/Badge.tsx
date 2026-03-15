@@ -24,6 +24,7 @@ export function Badge({ variant = 'neutral', children, ...props }: BadgeProps) {
     variantClass = badgeInfo;
   } else if (variant === 'warning') {
     variantClass = badgeWarning;
+  }
 
   return (
     <span className={`${badge}${variantClass ? ` ${variantClass}` : ''}`} {...props}>
