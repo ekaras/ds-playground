@@ -30,6 +30,9 @@ STEP 2 — Build these files following EXACTLY the patterns from step 1:
 - apps/storybook/src/stories/$COMPONENT_NAME.stories.tsx
 
 RULES — non negotiable:
+- Border radius: if Figma shows a pill/fully rounded shape, always use vars.radius.rFull. Only use r2/r4/r8/r16 for subtle rounding.
+- Variants: build ONLY the variants explicitly shown in the Figma node. Do not infer or create additional variants from tokens.
+- Do not snap design values to nearest token if the intent is clearly different (e.g. pill shape = rFull not r4).
 - Use @vanilla-extract/css with style() function — exactly as you saw in existing css.ts files
 - Import tokens from @acme-ds/tokens using vars object — exactly as you saw
 - No styled-components, no inline styles, no hardcoded hex values
