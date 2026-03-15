@@ -40,3 +40,10 @@ export const Info: Story = {
     variant: 'info',
   },
 };
+
+export const Promotion: Story = {
+  args: {
+    children: 'Promotion',
+    variant: 'promotion',
+  },
+};

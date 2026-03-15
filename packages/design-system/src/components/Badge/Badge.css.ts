@@ -32,3 +32,9 @@ export const badgeInfo = style({
   border: `1px solid ${vars.color.systemInfoBorder}`,
   color: vars.color.systemInfoText,
 });
+
+export const badgePromotion = style({
+  background: vars.color.systemPromotionBg,
+  border: `1px solid ${vars.color.systemPromotionBorder}`,
+  color: vars.color.systemPromotionText,
+});
