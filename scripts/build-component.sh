@@ -83,6 +83,6 @@ cd /Users/optimus/ds-playground
 git add -A
 git commit -m "feat: Add $COMPONENT_NAME component"
 git push origin main
-curl -s -X POST https://api.vercel.com/v1/integrations/deploy/prj_ad23jLIhks7hcDFWqrLJ0eG88wzr/411cJz6M5e
+echo "⚡ Vercel deployment triggered automatically via GitHub push"
 
 echo "✅ $COMPONENT_NAME built, validated, committed and deployed"

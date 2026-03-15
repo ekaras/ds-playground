@@ -1,3 +1,11 @@
-# Vercel Deploy Hook
-After every commit and push, trigger deployment with:
-curl -X POST https://api.vercel.com/v1/integrations/deploy/prj_vjy1IITUBrya78uLAT9MMUPRHuQf/yGMnznAXUD
+# Deployment
+
+Vercel deploys automatically on every push to main branch.
+No manual trigger needed.
+
+To verify deployment status:
+- Go to vercel.com → ds-playground project
+- Check latest deployment
+
+## GitHub
+Remote: git push origin main
