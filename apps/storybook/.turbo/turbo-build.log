@@ -7,7 +7,7 @@
 info => Cleaning outputDir: storybook-static
 info => Loading presets
 info => Building manager..
-info => Manager built ([38;2;181;126;229m144 ms[39m)
+info => Manager built ([38;2;181;126;229m153 ms[39m)
 info => Building preview..
 info Using tsconfig paths for react-docgen
 vite v5.4.21 building for production...
@@ -18,7 +18,7 @@ transforming...
 rendering chunks...
 computing gzip size...
 storybook-static/iframe.html                                17.57 kB │ gzip:   4.99 kB
-storybook-static/assets/Badge.css.js-DxRDPNz0.css            6.41 kB │ gzip:   1.13 kB
+storybook-static/assets/Badge.css.js-BSgCI5Gm.css            6.19 kB │ gzip:   1.12 kB
 storybook-static/assets/preview-CnKUH66D.css                15.40 kB │ gzip:   3.04 kB
 storybook-static/assets/preview-0GW3fCYS.js                  0.09 kB │ gzip:   0.10 kB
 storybook-static/assets/preview-CvbIS5ZJ.js                  0.18 kB │ gzip:   0.16 kB
@@ -29,37 +29,37 @@ storybook-static/assets/preview-DGUiP6tS.js                  0.71 kB │ gzip:  
 storybook-static/assets/index-DrFu-skq.js                    0.77 kB │ gzip:   0.47 kB
 storybook-static/assets/react-18-D3TVCdaC.js                 0.84 kB │ gzip:   0.49 kB
 storybook-static/assets/jsx-runtime-Z5uAzocK.js              0.92 kB │ gzip:   0.58 kB
-storybook-static/assets/preview-HNnLNGcL.js                  0.93 kB │ gzip:   0.59 kB
-storybook-static/assets/Text.stories-JhnyW7g_.js             1.44 kB │ gzip:   0.64 kB
-storybook-static/assets/Input.stories-COkw9N4R.js            1.62 kB │ gzip:   0.74 kB
-storybook-static/assets/preview-BGBoUKDF.js                  2.22 kB │ gzip:   1.21 kB
-storybook-static/assets/Badge.stories-r-jktUsR.js            2.50 kB │ gzip:   0.84 kB
+storybook-static/assets/preview-1le6UWnr.js                  0.93 kB │ gzip:   0.59 kB
+storybook-static/assets/Text.stories-DxDEOYuY.js             1.44 kB │ gzip:   0.64 kB
+storybook-static/assets/Input.stories-Do3RJ6Ef.js            1.62 kB │ gzip:   0.74 kB
+storybook-static/assets/preview-CDk89TMw.js                  2.22 kB │ gzip:   1.21 kB
+storybook-static/assets/Badge.stories-Cw1Lj61A.js            2.50 kB │ gzip:   0.84 kB
 storybook-static/assets/preview-DD_OYowb.js                  3.51 kB │ gzip:   1.69 kB
-storybook-static/assets/Toast.stories-C77bUNpU.js            3.86 kB │ gzip:   1.27 kB
-storybook-static/assets/Link.stories-Bm0OBzB5.js             4.31 kB │ gzip:   1.44 kB
+storybook-static/assets/Toast.stories-exst4yI8.js            3.86 kB │ gzip:   1.27 kB
+storybook-static/assets/Link.stories-B_Qi8pUr.js             4.31 kB │ gzip:   1.44 kB
 storybook-static/assets/preview-B8lJiyuQ.js                  5.06 kB │ gzip:   1.89 kB
 storybook-static/assets/index-pP6CS22B.js                    7.18 kB │ gzip:   2.92 kB
 storybook-static/assets/preview-BWzBA1C2.js                  7.62 kB │ gzip:   1.57 kB
 storybook-static/assets/preview-BBWR9nbA.js                  8.12 kB │ gzip:   3.08 kB
-storybook-static/assets/Button.stories-BCiDNckU.js           9.41 kB │ gzip:   2.50 kB
+storybook-static/assets/Button.stories-4mEE4Vwl.js           9.41 kB │ gzip:   2.50 kB
 storybook-static/assets/test-utils-C4rIXcST.js              12.99 kB │ gzip:   5.03 kB
-storybook-static/assets/Color-YHDXOIA2-CxhbfgDU.js          29.37 kB │ gzip:  10.95 kB
+storybook-static/assets/Color-YHDXOIA2-6EHS6GLb.js          29.37 kB │ gzip:  10.95 kB
 storybook-static/assets/matchers-7Z3WT2CE-OIiPHzXs.js       29.79 kB │ gzip:  10.23 kB
-storybook-static/assets/entry-preview-Bgd7CxeX.js           29.82 kB │ gzip:   9.50 kB
+storybook-static/assets/entry-preview-DkPv-lm2.js           29.82 kB │ gzip:   9.50 kB
 storybook-static/assets/index-Bhelpi4i.js                   57.15 kB │ gzip:  16.23 kB
 storybook-static/assets/index-Bvak3XBe.js                  134.00 kB │ gzip:  43.17 kB
-storybook-static/assets/iframe-BgbVo3in.js                 208.76 kB │ gzip:  71.41 kB
+storybook-static/assets/iframe-B1WDC_Eb.js                 208.76 kB │ gzip:  71.41 kB
 storybook-static/assets/entry-preview-docs-DSn79GSO.js     244.71 kB │ gzip:  72.56 kB
 storybook-static/assets/axe-M1rEDcX0.js                    580.35 kB │ gzip: 159.52 kB
 storybook-static/assets/index-DgAF9SIF.js                  662.40 kB │ gzip: 156.46 kB
-storybook-static/assets/DocsRenderer-CFRXHY34-BksqiYwo.js  883.44 kB │ gzip: 273.82 kB
+storybook-static/assets/DocsRenderer-CFRXHY34-Ce_dtgWm.js  883.44 kB │ gzip: 273.82 kB
 
 (!) Some chunks are larger than 500 kB after minification. Consider:
 - Using dynamic import() to code-split the application
 - Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
 - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
-✓ built in 6.11s
-info => Preview built ([38;2;181;126;229m6.67 s[39m)
+✓ built in 6.46s
+info => Preview built ([38;2;181;126;229m7.15 s[39m)
 info => Output directory: /Users/optimus/ds-playground/apps/storybook/storybook-static
 
 > @acme-ds/storybook@0.1.0 postbuild /Users/optimus/ds-playground/apps/storybook
