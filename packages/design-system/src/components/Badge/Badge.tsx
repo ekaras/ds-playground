@@ -4,10 +4,11 @@ import {
   badgeSuccess,
   badgeError,
   badgeInfo,
-  badgePromotion
+  badgePromotion,
+  badgeWarning
 } from './Badge.css';
 
-export type BadgeVariant = 'neutral' | 'success' | 'error' | 'info' | 'promotion';
+export type BadgeVariant = 'neutral' | 'success' | 'error' | 'info' | 'promotion' | 'warning';
 
 export type BadgeProps = HTMLAttributes<HTMLSpanElement> & {
   variant?: BadgeVariant;
@@ -24,6 +25,8 @@ export function Badge({ variant = 'neutral', children, ...props }: BadgeProps) {
     variantClass = badgeInfo;
   } else if (variant === 'promotion') {
     variantClass = badgePromotion;
+  } else if (variant === 'warning') {
+    variantClass = badgeWarning;
   }
   return (
     <span className={`${badge}${variantClass ? ` ${variantClass}` : ''}`} {...props}>

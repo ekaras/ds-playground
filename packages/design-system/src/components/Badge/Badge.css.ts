@@ -38,3 +38,9 @@ export const badgePromotion = style({
   border: `1px solid ${vars.color.systemPromotionBorder}`,
   color: vars.color.systemPromotionText,
 });
+
+export const badgeWarning = style({
+  background: vars.color.systemWarningBg,
+  border: `1px solid ${vars.color.systemWarningBorder}`,
+  color: vars.color.systemWarningText,
+});
