@@ -6,4 +6,3 @@ export { Input, type InputProps } from './components/Input/Input';
 
 export { Toast, type ToastProps, type ToastVariant } from './components/Toast/Toast';
 export { Link, type LinkProps } from './components/Link/Link';
-export * from './components/Badge/Badge';
