@@ -11,7 +11,7 @@ const meta: Meta<typeof Badge> = {
   argTypes: {
     variant: {
       control: { type: 'select' },
-      options: ['neutral', 'success', 'error'],
+      options: ['neutral', 'success', 'error', 'warning'],
       description: 'Visual style of the badge',
       table: { defaultValue: { summary: 'neutral' } },
     },
@@ -44,5 +44,12 @@ export const Error: Story = {
   args: {
     children: 'Error',
     variant: 'error',
+  },
+};
+
+export const Warning: Story = {
+  args: {
+    children: 'Warning',
+    variant: 'warning',
   },
 };

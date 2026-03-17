@@ -2,10 +2,11 @@ import type { HTMLAttributes } from 'react';
 import {
   badge,
   badgeSuccess,
-  badgeError
+  badgeError,
+  badgeWarning
 } from './Badge.css';
 
-export type BadgeVariant = 'neutral' | 'success' | 'error';
+export type BadgeVariant = 'neutral' | 'success' | 'error' | 'warning';
 
 export type BadgeProps = HTMLAttributes<HTMLSpanElement> & {
   variant?: BadgeVariant;
@@ -18,6 +19,8 @@ export function Badge({ variant = 'neutral', children, ...props }: BadgeProps) {
     variantClass = badgeSuccess;
   } else if (variant === 'error') {
     variantClass = badgeError;
+  } else if (variant === 'warning') {
+    variantClass = badgeWarning;
   }
   return (
     <span className={`${badge}${variantClass ? ` ${variantClass}` : ''}`} {...props}>
