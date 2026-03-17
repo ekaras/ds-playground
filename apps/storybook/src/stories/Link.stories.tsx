@@ -18,10 +18,7 @@ const meta: Meta<typeof Link> = {
       control: { type: 'text' },
       description: 'The URL the link points to',
     },
-    'aria-disabled': {
-      control: { type: 'boolean' },
-      description: 'Disables the link interaction',
-    },
+
   },
 };
 
@@ -41,14 +38,6 @@ export const WithoutIcon: Story = {
     children: 'Label',
     href: '#',
     showIcon: false,
-  },
-};
-
-export const Disabled: Story = {
-  args: {
-    children: 'Label',
-    href: '#',
-    'aria-disabled': true,
   },
 };
 
@@ -72,10 +61,7 @@ export const AllStates: Story = {
         <p style={{ margin: '0 0 4px 0', fontSize: '11px', color: '#888' }}>Without Icon</p>
         <Link href="#" showIcon={false}>Label</Link>
       </div>
-      <div>
-        <p style={{ margin: '0 0 4px 0', fontSize: '11px', color: '#888' }}>Disabled</p>
-        <Link href="#" aria-disabled="true">Label</Link>
-      </div>
+
     </div>
   ),
 };
