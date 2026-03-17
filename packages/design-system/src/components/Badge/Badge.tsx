@@ -1,14 +1,27 @@
-import { badge } from './Badge.css';
+import type { HTMLAttributes } from 'react';
+import {
+  badge,
+  badgeSuccess,
+  badgeError
+} from './Badge.css';
 
-export type BadgeProps = {
-  label: string;
-  className?: string;
+export type BadgeVariant = 'neutral' | 'success' | 'error';
+
+export type BadgeProps = HTMLAttributes<HTMLSpanElement> & {
+  variant?: BadgeVariant;
 };
 
-export function Badge({ label, className }: BadgeProps) {
+/** Badge component for displaying status labels and categorical tags. */
+export function Badge({ variant = 'neutral', children, ...props }: BadgeProps) {
+  let variantClass = '';
+  if (variant === 'success') {
+    variantClass = badgeSuccess;
+  } else if (variant === 'error') {
+    variantClass = badgeError;
+  }
   return (
-    <span className={`${badge}${className ? ` ${className}` : ''}`}>
-      {label}
+    <span className={`${badge}${variantClass ? ` ${variantClass}` : ''}`} {...props}>
+      {children}
     </span>
   );
 }

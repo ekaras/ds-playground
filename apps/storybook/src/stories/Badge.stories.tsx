@@ -8,19 +8,41 @@ const meta: Meta<typeof Badge> = {
   parameters: {
     layout: 'centered',
   },
-  args: {
-    label: 'Badge label',
-  },
   argTypes: {
-    label: {
+    variant: {
+      control: { type: 'select' },
+      options: ['neutral', 'success', 'error'],
+      description: 'Visual style of the badge',
+      table: { defaultValue: { summary: 'neutral' } },
+    },
+    children: {
       control: { type: 'text' },
-      description: 'Text displayed inside the badge',
+      description: 'Content to be displayed inside the badge',
     },
   },
 };
 
 export default meta;
 
-type Story = StoryObj<typeof Badge>;
+type Story = StoryObj<typeof meta>;
 
-export const Default: Story = {};
+export const Neutral: Story = {
+  args: {
+    children: 'Neutral',
+    variant: 'neutral',
+  },
+};
+
+export const Success: Story = {
+  args: {
+    children: 'Success',
+    variant: 'success',
+  },
+};
+
+export const Error: Story = {
+  args: {
+    children: 'Error',
+    variant: 'error',
+  },
+};
